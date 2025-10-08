@@ -1,0 +1,272 @@
+[
+  {
+    "image": "https://sm.pcmag.com/pcmag_uk/review/t/todoist/todoist_juru.png",
+    "title": "Todoist – Task Management",
+    "companyName": "FlowLabs Inc.",
+    "id": 1,
+    "description": "Manage your daily tasks efficiently with AI-assisted scheduling and reminders.",
+    "size": 42,
+    "reviews": 2456,
+    "ratingAvg": 4.5,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 120 },
+      { "name": "2 star", "count": 230 },
+      { "name": "3 star", "count": 480 },
+      { "name": "4 star", "count": 720 },
+      { "name": "5 star", "count": 906 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/6yT8JfjY4ESEu69QpxHxjhyVhIoPgpbol1t4hEgfiBcGP0gy35ez0NvxyARrq5VPcGU",
+    "title": "SmPlan – To-Do & Reminders",
+    "companyName": "VitalTech",
+    "id": 2,
+    "description": "Track tasks, set reminders, and organize your day effectively.",
+    "size": 58,
+    "reviews": 3870,
+    "ratingAvg": 4.3,
+    "downloads": 2450000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 410 },
+      { "name": "3 star", "count": 620 },
+      { "name": "4 star", "count": 980 },
+      { "name": "5 star", "count": 1560 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/fUuE3aeLrf5kjhOklwsJHRBenm-dhF0DnMALPzxoeTQ7JDt76DVYZWnxkV1ibd-77A",
+    "title": "FLIP – Focus Timer",
+    "companyName": "PaperCloud",
+    "id": 3,
+    "description": "Stay productive with a minimalistic focus timer for study or work sessions.",
+    "size": 24,
+    "reviews": 1320,
+    "ratingAvg": 4.7,
+    "downloads": 540000,
+    "ratings": [
+      { "name": "1 star", "count": 45 },
+      { "name": "2 star", "count": 90 },
+      { "name": "3 star", "count": 150 },
+      { "name": "4 star", "count": 380 },
+      { "name": "5 star", "count": 655 }
+    ]
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmu8Fh9w6Rf2qRPOizKGNZmpyY7FHqmMXgpA&s",
+    "title": "Headspace – Meditation",
+    "companyName": "DevNest",
+    "id": 4,
+    "description": "Guided meditations, breathing exercises, and mindfulness techniques.",
+    "size": 96,
+    "reviews": 5120,
+    "ratingAvg": 4.6,
+    "downloads": 3250000,
+    "ratings": [
+      { "name": "1 star", "count": 180 },
+      { "name": "2 star", "count": 270 },
+      { "name": "3 star", "count": 680 },
+      { "name": "4 star", "count": 1450 },
+      { "name": "5 star", "count": 2540 }
+    ]
+  },
+  {
+    "image": "https://m.media-amazon.com/images/I/61XFD-AgYtL.jpg",
+    "title": "Pomodoro Timer – Productivity",
+    "companyName": "CalmWave Studio",
+    "id": 5,
+    "description": "A professional Pomodoro timer to structure your work and break intervals.",
+    "size": 65,
+    "reviews": 6230,
+    "ratingAvg": 4.8,
+    "downloads": 4100000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 180 },
+      { "name": "3 star", "count": 320 },
+      { "name": "4 star", "count": 1100 },
+      { "name": "5 star", "count": 4430 }
+    ]
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC8vBqyPM_RBaZqZSdz-N_dTQry5A1fveZqg&s",
+    "title": "Alarmy – Alarm Clock",
+    "companyName": "MarketX",
+    "id": 6,
+    "description": "Reliable alarm clock with multiple modes, sleep tracking, and reminders.",
+    "size": 74,
+    "reviews": 2140,
+    "ratingAvg": 4.2,
+    "downloads": 1900000,
+    "ratings": [
+      { "name": "1 star", "count": 240 },
+      { "name": "2 star", "count": 320 },
+      { "name": "3 star", "count": 460 },
+      { "name": "4 star", "count": 620 },
+      { "name": "5 star", "count": 500 }
+    ]
+  },
+  {
+    "image": "https://i.pinimg.com/474x/09/2b/90/092b90ca78717652de8d9eed83641d07.jpg",
+    "title": "Morning Habits – Daily Routine",
+    "companyName": "NomadSoft",
+    "id": 7,
+    "description": "Plan and track your daily routines to build effective habits.",
+    "size": 88,
+    "reviews": 3980,
+    "ratingAvg": 4.4,
+    "downloads": 2650000,
+    "ratings": [
+      { "name": "1 star", "count": 280 },
+      { "name": "2 star", "count": 370 },
+      { "name": "3 star", "count": 690 },
+      { "name": "4 star", "count": 1050 },
+      { "name": "5 star", "count": 1590 }
+    ]
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ59ueuo2hGk-cB9NKYRDFmT84FTuVUF_2BcGf6RozfPglJYPfdw4pugb_dwhyb25qiDA&usqp=CAU",
+    "title": "Duolingo – Language Learning",
+    "companyName": "BudgetEase",
+    "id": 8,
+    "description": "Learn new languages with structured lessons and interactive exercises.",
+    "size": 37,
+    "reviews": 1890,
+    "ratingAvg": 4.6,
+    "downloads": 1500000,
+    "ratings": [
+      { "name": "1 star", "count": 90 },
+      { "name": "2 star", "count": 140 },
+      { "name": "3 star", "count": 260 },
+      { "name": "4 star", "count": 580 },
+      { "name": "5 star", "count": 820 }
+    ]
+  },
+  {
+    "image": "https://woorkup.com/wp-content/uploads/2021/01/project-management-software.png",
+    "title": "Trello – Project Management",
+    "companyName": "SnapForge",
+    "id": 9,
+    "description": "Organize projects and collaborate with team boards and task lists.",
+    "size": 83,
+    "reviews": 8410,
+    "ratingAvg": 4.1,
+    "downloads": 5600000,
+    "ratings": [
+      { "name": "1 star", "count": 820 },
+      { "name": "2 star", "count": 970 },
+      { "name": "3 star", "count": 1630 },
+      { "name": "4 star", "count": 2120 },
+      { "name": "5 star", "count": 2870 }
+    ]
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9ER0oTscp7DnrB2bfZHV7uCir2ropf0069g&s",
+    "title": "GoodNotes – Note-Taking",
+    "companyName": "CareSync",
+    "id": 10,
+    "description": "Create, organize, and sync notes across all devices with ease.",
+    "size": 49,
+    "reviews": 2760,
+    "ratingAvg": 4.5,
+    "downloads": 2200000,
+    "ratings": [
+      { "name": "1 star", "count": 180 },
+      { "name": "2 star", "count": 260 },
+      { "name": "3 star", "count": 410 },
+      { "name": "4 star", "count": 890 },
+      { "name": "5 star", "count": 1020 }
+    ]
+  },
+  {
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/02/36/c5/0236c5a8-70a3-b5cd-86d1-f48d92745929/AppIcon-0-85-220-0-6-0-0-2x-sRGB-0-0.png/1200x630wa.png",
+    "title": "MindNode – Mind Mapping",
+    "companyName": "Learnify",
+    "id": 11,
+    "description": "Visualize ideas and create structured mind maps for projects and planning.",
+    "size": 62,
+    "reviews": 5630,
+    "ratingAvg": 4.7,
+    "downloads": 4300000,
+    "ratings": [
+      { "name": "1 star", "count": 160 },
+      { "name": "2 star", "count": 220 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 1300 },
+      { "name": "5 star", "count": 3450 }
+    ]
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRQbqBKFgFKHl3IjWGTn46yw7Xnrjzm9ZSvw&s",
+    "title": "MusicVerse – Music Streaming",
+    "companyName": "TuneTech",
+    "id": 12,
+    "description": "Stream and discover music with personalized recommendations and playlists.",
+    "size": 79,
+    "reviews": 7830,
+    "ratingAvg": 4.3,
+    "downloads": 8900000,
+    "ratings": [
+      { "name": "1 star", "count": 640 },
+      { "name": "2 star", "count": 810 },
+      { "name": "3 star", "count": 1420 },
+      { "name": "4 star", "count": 2060 },
+      { "name": "5 star", "count": 2900 }
+    ]
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFngy9Y3e0K3q3cJUv5vSc0U4Um5d4JkxldQ&s",
+    "title": "NewsNow – News Aggregator",
+    "companyName": "DailyLoop",
+    "id": 13,
+    "description": "Stay updated with news from trusted sources in a personalized feed.",
+    "size": 35,
+    "reviews": 4150,
+    "ratingAvg": 4.0,
+    "downloads": 3700000,
+    "ratings": [
+      { "name": "1 star", "count": 510 },
+      { "name": "2 star", "count": 660 },
+      { "name": "3 star", "count": 910 },
+      { "name": "4 star", "count": 1040 },
+      { "name": "5 star", "count": 1030 }
+    ]
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUo3YgXAeKCaAYrdLspfBODF_7fUgENVN9Nw&s",
+    "title": "Chatly – Real-Time Messaging",
+    "companyName": "Connectify",
+    "id": 14,
+    "description": "Secure messaging with AI smart replies, media sharing, and group chats.",
+    "size": 52,
+    "reviews": 6340,
+    "ratingAvg": 4.6,
+    "downloads": 5100000,
+    "ratings": [
+      { "name": "1 star", "count": 240 },
+      { "name": "2 star", "count": 370 },
+      { "name": "3 star", "count": 780 },
+      { "name": "4 star", "count": 1410 },
+      { "name": "5 star", "count": 3540 }
+    ]
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkG0iZ5Ug_oVS8rcDZXe0rj2Bt4_yOqB4wPg&s",
+    "title": "Weatherly – Weather Forecast",
+    "companyName": "SkyCast",
+    "id": 15,
+    "description": "Accurate weather forecasts with live radar, alerts, and location updates.",
+    "size": 39,
+    "reviews": 2980,
+    "ratingAvg": 4.4,
+    "downloads": 1800000,
+    "ratings": [
+      { "name": "1 star", "count": 190 },
+      { "name": "2 star", "count": 260 },
+      { "name": "3 star", "count": 470 },
+      { "name": "4 star", "count": 890 },
+      { "name": "5 star", "count": 1170 }
+    ]
+  }
+]
