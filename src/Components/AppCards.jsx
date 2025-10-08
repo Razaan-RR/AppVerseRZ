@@ -1,12 +1,16 @@
+import { Link } from 'react-router'
 import downloads_icon from '../assets/icon-downloads.png'
 import rating_icon from '../assets/icon-ratings.png'
 
 function AppCards({ app }) {
-  const { title, image, downloads, ratingAvg } = app
+  const { id, title, image, downloads, ratingAvg } = app
   return (
     <div>
-      <div className="cards pt-2">
-        <div className="card bg-base-100 w-[270px] shadow-sm pb-4">
+      <div className="cards pt-2 transition-transform duration-300 hover:-translate-y-2 hover:shadow-md">
+        <Link
+          to={`/app/${id}`}
+          className="card bg-base-100 w-[270px] shadow-sm pb-4"
+        >
           <figure className="px-4 pt-4">
             <img
               className="rounded-lg h-70 w-full object-cover"
@@ -35,7 +39,7 @@ function AppCards({ app }) {
               </p>
             </div>
           </div>
-        </div>
+        </Link>
       </div>
     </div>
   )
