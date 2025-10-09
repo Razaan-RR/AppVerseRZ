@@ -3,7 +3,7 @@ import useApps from '../Hooks/useApps'
 import downloads_icon from '../assets/icon-downloads.png'
 import rating_icon from '../assets/icon-ratings.png'
 import review_icon from '../assets/icon-review.png'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 
@@ -13,6 +13,16 @@ function AppDetails() {
   const [installed, setInstalled] = useState(false)
 
   const app = apps.find((p) => String(p.id) === id)
+
+  useEffect(() => {
+    if (app) {
+      const existingApps = JSON.parse(localStorage.getItem('installed')) || []
+      const isAlreadyInstalled = existingApps.some((p) => p.id === app.id)
+      if (isAlreadyInstalled) {
+        setInstalled(true)
+      }
+    }
+  }, [app])
 
   if (loading) {
     return (
@@ -40,6 +50,17 @@ function AppDetails() {
   } = app
 
   const handleInstall = () => {
+    const existingApps = JSON.parse(localStorage.getItem('installed')) || []
+
+    const isDuplicate = existingApps.some((p) => p.id === app.id)
+    if (isDuplicate) {
+      toast.info(`${title} is already installed`, { position: 'top-right' })
+      return
+    }
+
+    const updatedApps = [...existingApps, app]
+    localStorage.setItem('installed', JSON.stringify(updatedApps))
+
     setInstalled(true)
     toast.success(`${title} installed successfully!`, {
       position: 'top-right',
@@ -61,7 +82,10 @@ function AppDetails() {
           <div className="ml-10 flex-1">
             <h1 className="font-bold text-2xl">{title}</h1>
             <p className="text-[#627382] text-xs pt-2 pb-6">
-              Developed by <span className="text-[#632EE3] font-semibold">{companyName}</span>
+              Developed by{' '}
+              <span className="text-[#632EE3] font-semibold">
+                {companyName}
+              </span>
             </p>
             <hr class="border-gray-300 w-full" />
           </div>
