@@ -1,10 +1,8 @@
-// import { useLoaderData } from 'react-router'
 import Banner from '../Components/Banner'
 import Stats from '../Components/Stats'
 import TopApps from '../Components/TopApps'
 
 function Home() {
-//   const apps = useLoaderData()
   return (
     <div>
       <Banner></Banner>
