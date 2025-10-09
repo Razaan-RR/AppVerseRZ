@@ -23,9 +23,9 @@ function Installation() {
 
   const sortedApps = () => {
     if (sortSize === 'asc') {
-      return [...installedApps].sort((a, b) => a.size - b.size)
+      return [...installedApps].sort((a, b) => a.downloads - b.downloads)
     } else if (sortSize === 'desc') {
-      return [...installedApps].sort((a, b) => b.size - a.size)
+      return [...installedApps].sort((a, b) => b.downloads - a.downloads)
     } else {
       return installedApps
     }
@@ -64,14 +64,14 @@ function Installation() {
           <select
             value={sortSize}
             onChange={(e) => setsortSize(e.target.value)}
-            className="w-42 btn m-1 text-[#627382] appearance-none pr-6 bg-white border border-gray-300 rounded-md"
+            className="w-36 btn m-1 text-[#627382] appearance-none pr-6 bg-white border border-gray-300 rounded-md"
             defaultValue=""
           >
             <option value="none" disabled>
               Sort By Size ▼
             </option>
-            <option value="asc">Sort By Ascending</option>
-            <option value="desc">Sort By Descending</option>
+            <option value="asc">Low-High</option>
+            <option value="desc">High-Low</option>
           </select>
         </div>
       </div>

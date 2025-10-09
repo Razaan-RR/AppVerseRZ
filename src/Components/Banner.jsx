@@ -14,14 +14,26 @@ function Banner() {
         ideas into digital experiences that truly make an impact.
       </p>
       <div className="pb-10">
-        <button className="p-4 btn btn-outline border-[#D2D2D2]">
-          <img className="w-4 h-4" src={googlePlay} alt="googlePlay" />
-          Google Play
-        </button>
-        <button className="p-4 btn btn-outline border-[#D2D2D2] ml-4">
-          <img className="w-4 h-4" src={appStore} alt="appStore" />
-          App Store
-        </button>
+        <a
+          href="https://play.google.com/store"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="p-4 btn btn-outline border-[#D2D2D2]">
+            <img className="w-4 h-4" src={googlePlay} alt="googlePlay" />
+            Google Play
+          </button>
+        </a>
+        <a
+          href="https://www.apple.com/app-store/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="p-4 btn btn-outline border-[#D2D2D2] ml-4">
+            <img className="w-4 h-4" src={appStore} alt="appStore" />
+            App Store
+          </button>
+        </a>
       </div>
       <div className="">
         <img

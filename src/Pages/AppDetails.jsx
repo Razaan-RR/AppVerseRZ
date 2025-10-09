@@ -138,7 +138,7 @@ function AppDetails() {
             margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
           >
             <XAxis type="number" />
-            <YAxis dataKey="name" type="category" />
+            <YAxis dataKey="name" type="category" reversed />
             <Tooltip />
             <Bar dataKey="count" fill="#FF8811" barSize={20}>
               {app.ratings.map((entry, index) => (
