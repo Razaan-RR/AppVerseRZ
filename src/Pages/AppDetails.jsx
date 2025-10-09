@@ -6,6 +6,15 @@ import review_icon from '../assets/icon-review.png'
 import { useEffect, useState } from 'react'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  Tooltip,
+  ResponsiveContainer,
+  Cell,
+} from 'recharts'
 
 function AppDetails() {
   const { id } = useParams()
@@ -120,9 +129,24 @@ function AppDetails() {
         </div>
       </div>
       <hr class="border-gray-300 w-full my-8" />
-      <div>
-        <h1 className="font-bold">Ratings</h1>
-        <p className="text-[#627382]">{}</p>
+      <div className="my-6">
+        <h1 className="font-bold mb-6">Ratings</h1>
+        <ResponsiveContainer width="100%" height={200}>
+          <BarChart
+            layout="vertical"
+            data={app.ratings}
+            margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
+          >
+            <XAxis type="number" />
+            <YAxis dataKey="name" type="category" />
+            <Tooltip />
+            <Bar dataKey="count" fill="#FF8811" barSize={20}>
+              {app.ratings.map((entry, index) => (
+                <Cell key={`cell-${index}`} fill="#FF8811" />
+              ))}
+            </Bar>
+          </BarChart>
+        </ResponsiveContainer>
       </div>
       <hr class="border-gray-300 w-full my-8" />
       <div>
