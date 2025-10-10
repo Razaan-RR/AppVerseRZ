@@ -76,7 +76,7 @@ function Navbar() {
         <div className="flex items-center">
           <div className="hidden lg:block">
             <a
-              href="https://github.com"
+              href="https://github.com/Razaan-RR"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -100,11 +100,11 @@ function Navbar() {
 
           <div className="lg:hidden flex-shrink-0 ml-1">
             <a
-              href="https://github.com"
+              href="https://github.com/Razaan-RR"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button className="btn text-xs px-1 py-1 bg-gradient-to-r from-[#632EE3] to-[#9F62F2] truncate max-w-[80px]">
+              <button className="btn text-xs px-1 py-1 bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white truncate max-w-[80px]">
                 Contribute
               </button>
             </a>

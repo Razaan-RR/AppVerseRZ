@@ -15,18 +15,18 @@ function Footer() {
           </p>
         </div>
 
-        <div className="flex flex-col space-y-2 text-sm sm:text-base">
+        <div className="pl-30 flex flex-col space-y-2 text-sm sm:text-base">
           <h3 className="text-lg font-semibold mb-2">Quick Links</h3>
-          <a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">
+          <a href="#" className="text-gray-400 hover:text-white transition-colors duration-200 pl-6">
             Home
           </a>
-          <a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">
+          <a href="#" className="text-gray-400 hover:text-white transition-colors duration-200 pl-6">
             About
           </a>
-          <a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">
+          <a href="#" className="text-gray-400 hover:text-white transition-colors duration-200 pl-6">
             Tickets
           </a>
-          <a href="#" className="text-gray-400 hover:text-white transition-colors duration-200">
+          <a href="#" className="text-gray-400 hover:text-white transition-colors duration-200 pl-6">
             Contact
           </a>
         </div>

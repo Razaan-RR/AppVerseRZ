@@ -85,7 +85,11 @@ function AppDetails() {
     <div className="bg-[#f5f5f5] px-14 pt-14 pb-6">
       <div className="flex">
         <div>
-          <img className="w-[230px] h-[230px]" src={image} alt="image" />
+          <img
+            className="hidden sm:block w-[230px] h-[230px]"
+            src={image}
+            alt="image"
+          />
         </div>
         <div>
           <div className="ml-10 flex-1">

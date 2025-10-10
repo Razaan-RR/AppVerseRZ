@@ -67,7 +67,7 @@ function Installation() {
             className="w-36 btn m-1 text-[#627382] appearance-none pr-6 bg-white border border-gray-300 rounded-md"
             defaultValue=""
           >
-            <option value="none" disabled>
+            <option value="none">
               Sort By Size ▼
             </option>
             <option value="asc">Low-High</option>
