@@ -9,7 +9,7 @@ function Banner() {
         We Build <br /> <span className="text-[#632EE3]">Productive</span> Apps
       </h1>
       <p className="text-[#627382] py-4">
-        At HERO.IO, we craft innovative apps designed to make everyday life
+        At AppVerseRZ, we craft innovative apps designed to make everyday life
         simpler, smarter, and more exciting. <br /> Our goal is to turn your
         ideas into digital experiences that truly make an impact.
       </p>
