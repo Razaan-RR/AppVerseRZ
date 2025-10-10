@@ -19,18 +19,18 @@ function Apps() {
     return () => clearTimeout(timer)
   }, [search])
   return (
-    <div className="bg-[#f5f5f5] py-10">
-      <div className="px-14">
-        <h1 className="text-center text-3xl font-bold">Our All Applications</h1>
-        <p className="text-[#627382] text-center pt-4 pb-8">
+    <div className="bg-[#f5f5f5] py-10 overflow-x-hidden">
+      <div className="px-14 max-sm:px-5">
+        <h1 className="text-center text-3xl font-bold max-sm:text-2xl">Our All Applications</h1>
+        <p className="text-[#627382] text-center pt-4 pb-8 max-sm:text-sm max-sm:pt-3 max-sm:pb-6">
           Explore All Apps on the Market developed by us. We code for Millions
         </p>
       </div>
-      <div className="px-14 pb-2 flex justify-between items-center">
+      <div className="px-14 pb-2 flex justify-between items-center max-sm:px-5 max-sm:flex-col max-sm:items-start max-sm:gap-3">
         <h1 className="font-bold text-lg">
           ({searchedApps.length}) Apps Found
         </h1>
-        <label className="input right-3">
+        <label className="input right-3 max-sm:w-full max-sm:flex max-sm:items-center max-sm:border max-sm:border-gray-300 max-sm:rounded-full max-sm:px-3 max-sm:py-1 max-sm:bg-white">
           <svg
             className="h-[1.5em] opacity-50"
             xmlns="http://www.w3.org/2000/svg"
@@ -53,6 +53,7 @@ function Apps() {
             type="search"
             required
             placeholder="search Apps"
+            className='max-sm:w-full max-sm:outline-none max-sm:bg-transparent'
           />
         </label>
       </div>

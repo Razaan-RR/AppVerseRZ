@@ -51,7 +51,7 @@ function Installation() {
   }
 
   return (
-    <div className="bg-[#f5f5f5] py-10 px-14 min-h-screen">
+    <div className="bg-[#f5f5f5] py-10 px-14 min-h-screen overflow-x-hidden max-sm:px-5">
       <div className="">
         <h1 className="text-center text-3xl font-bold">Your Installed Apps</h1>
         <p className="text-[#627382] text-center pt-4 pb-8">
