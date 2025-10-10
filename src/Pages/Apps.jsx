@@ -1,13 +1,15 @@
 import { useState } from 'react'
 import AppCards from '../Components/AppCards'
 import useApps from '../Hooks/useApps'
+import appError from '../assets/App-Error.png'
+
 
 function Apps() {
   const [search, setSearch] = useState('')
   const { apps } = useApps()
   const word = search.trim().toLocaleLowerCase()
   const searchedApps = word
-    ? apps.filter(app => app.title.toLocaleLowerCase().includes(word))
+    ? apps.filter((app) => app.title.toLocaleLowerCase().includes(word))
     : apps
   return (
     <div className="bg-[#f5f5f5] py-10">
@@ -18,7 +20,9 @@ function Apps() {
         </p>
       </div>
       <div className="px-14 pb-2 flex justify-between items-center">
-        <h1 className="font-bold text-lg">({searchedApps.length}) Apps Found</h1>
+        <h1 className="font-bold text-lg">
+          ({searchedApps.length}) Apps Found
+        </h1>
         <label className="input right-3">
           <svg
             className="h-[1.5em] opacity-50"
@@ -46,9 +50,26 @@ function Apps() {
         </label>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 px-14 bg-[#f5f5f5]">
-        {searchedApps.map((app) => (
-          <AppCards key={app.id} app={app}></AppCards>
-        ))}
+        {searchedApps.length > 0 ? (
+          searchedApps.map((app) => (
+            <AppCards key={app.id} app={app}></AppCards>
+          ))
+        ) : (
+          <div className="bg-[#f5f5f5]">
+            <div className="h-screen flex flex-col items-center justify-center translate-x-100">
+              <img src={appError} alt="appError" className="mb-6" />
+
+              <h1 className="text-center text-3xl font-bold">
+                OPPS!! APP NOT FOUND
+              </h1>
+
+              <p className="text-[#627382] text-center pt-4 pb-6">
+                The App you are requesting is not found on our system.  please try another apps
+              </p>
+
+            </div>
+          </div>
+        )}
       </div>
     </div>
   )

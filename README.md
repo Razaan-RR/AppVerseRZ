@@ -1,8 +1,7 @@
 <!-- Things Left -->
 1. Make the Application Responsive for All the Devices
 2. Add a Readme.md with App Name , Description & Technologies
-3. A logo on clicking it user will be navigated to home page.
-4. If no app matches in search, display a “No App Found” message.
-5. Customize Error Page
-6. Show a loading animation during: Page navigation, and Search operation.
-7. Deploy the project to Cloudflare / Netlify / Vercel. Reloading from any route must work correctly without showing a 404 error.
+3. Show a loading animation during: Page navigation, and Search operation.
+4. Deploy the project to Cloudflare / Netlify / Vercel. Reloading from any route must work correctly without showing a 404 error.
+5. Loading Spinner
+6. Button hover in navbar
