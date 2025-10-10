@@ -64,11 +64,11 @@ function Installation() {
           <select
             value={sortSize}
             onChange={(e) => setsortSize(e.target.value)}
-            className="w-36 btn m-1 text-[#627382] appearance-none pr-6 bg-white border border-gray-300 rounded-md"
+            className="w-45 btn m-1 text-[#627382] appearance-none pr-6 bg-white border border-gray-300 rounded-md"
             defaultValue=""
           >
             <option value="none">
-              Sort By Size ▼
+              Sort By Downloads ▼
             </option>
             <option value="asc">Low-High</option>
             <option value="desc">High-Low</option>

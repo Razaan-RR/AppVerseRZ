@@ -1,4 +1,4 @@
-import { useParams } from 'react-router'
+import { useNavigate, useParams } from 'react-router'
 import useApps from '../Hooks/useApps'
 import downloads_icon from '../assets/icon-downloads.png'
 import rating_icon from '../assets/icon-ratings.png'
@@ -6,6 +6,7 @@ import review_icon from '../assets/icon-review.png'
 import { useEffect, useState } from 'react'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+import app_error from '../assets/App-error.png'
 import {
   BarChart,
   Bar,
@@ -18,6 +19,7 @@ import {
 
 function AppDetails() {
   const { id } = useParams()
+  const navigate = useNavigate()
   const { apps, loading, error } = useApps()
   const [installed, setInstalled] = useState(false)
 
@@ -47,6 +49,31 @@ function AppDetails() {
     )
   }
 
+  if (!app) {
+    return (
+      <div className="bg-[#f5f5f5]">
+        <div className="h-screen flex flex-col items-center justify-center">
+          <img src={app_error} alt="error" className="mb-6 w-80" />
+
+          <h1 className="text-center text-3xl font-bold">
+            Oops, App not found!
+          </h1>
+
+          <p className="text-[#627382] text-center pt-4 pb-6">
+            The app you're looking for doesn't exist.
+          </p>
+
+          <button
+            onClick={() => navigate(-1)}
+            className="btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white border-none px-8 py-2 rounded-lg"
+          >
+            Go Back
+          </button>
+        </div>
+      </div>
+    )
+  }
+
   const {
     title,
     image,
@@ -59,13 +86,7 @@ function AppDetails() {
   } = app
 
   const handleInstall = () => {
-    const existingApps = JSON.parse(localStorage.getItem('installed')) || []
-
-    const isDuplicate = existingApps.some((p) => p.id === app.id)
-    if (isDuplicate) {
-      toast.info(`${title} is already installed`, { position: 'top-right' })
-      return
-    }
+    const existingApps = JSON.parse(localStorage.getItem('installed')) || []    
 
     const updatedApps = [...existingApps, app]
     localStorage.setItem('installed', JSON.stringify(updatedApps))
