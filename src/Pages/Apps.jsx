@@ -1,16 +1,23 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import AppCards from '../Components/AppCards'
 import useApps from '../Hooks/useApps'
 import appError from '../assets/App-Error.png'
-
+import LoadingSpinner from '../Components/LoadingSpinner'
 
 function Apps() {
   const [search, setSearch] = useState('')
+  const [loading, setLoading] = useState(false)
   const { apps } = useApps()
   const word = search.trim().toLocaleLowerCase()
   const searchedApps = word
     ? apps.filter((app) => app.title.toLocaleLowerCase().includes(word))
     : apps
+  useEffect(() => {
+    if (!search) return
+    setLoading(true)
+    const timer = setTimeout(() => setLoading(false), 300)
+    return () => clearTimeout(timer)
+  }, [search])
   return (
     <div className="bg-[#f5f5f5] py-10">
       <div className="px-14">
@@ -50,13 +57,15 @@ function Apps() {
         </label>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 px-14 bg-[#f5f5f5]">
-        {searchedApps.length > 0 ? (
-          searchedApps.map((app) => (
-            <AppCards key={app.id} app={app}></AppCards>
-          ))
+        {loading ? (
+          <div className="col-span-full">
+            <LoadingSpinner />
+          </div>
+        ) : searchedApps.length > 0 ? (
+          searchedApps.map((app) => <AppCards key={app.id} app={app} />)
         ) : (
           <div className="bg-[#f5f5f5]">
-            <div className="h-screen flex flex-col items-center justify-center translate-x-100">
+            <div className="h-screen flex flex-col items-center justify-center translate-x-110">
               <img src={appError} alt="appError" className="mb-6" />
 
               <h1 className="text-center text-3xl font-bold">
@@ -64,9 +73,9 @@ function Apps() {
               </h1>
 
               <p className="text-[#627382] text-center pt-4 pb-6">
-                The App you are requesting is not found on our system.  please try another apps
+                The App you are requesting is not found on our system. please
+                try another apps
               </p>
-
             </div>
           </div>
         )}

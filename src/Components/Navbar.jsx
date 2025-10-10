@@ -16,13 +16,40 @@ function Navbar() {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 font-semibold">
             <li>
-              <NavLink to="/">Home</NavLink>
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  `inline-block px-2 py-1 border-b-2 border-transparent hover:text-[#632EE3] hover:border-[#632EE3] ${
+                    isActive ? '!text-[#632EE3] !border-[#632EE3]' : ''
+                  }`
+                }
+              >
+                Home
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/apps">Apps</NavLink>
+              <NavLink
+                to="/apps"
+                className={({ isActive }) =>
+                  `inline-block px-2 py-1 border-b-2 border-transparent hover:text-[#632EE3] hover:border-[#632EE3] ${
+                    isActive ? '!text-[#632EE3] !border-[#632EE3]' : ''
+                  }`
+                }
+              >
+                Apps
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/installation">Installation</NavLink>
+              <NavLink
+                to="/installation"
+                className={({ isActive }) =>
+                  `inline-block px-2 py-1 border-b-2 border-transparent hover:text-[#632EE3] hover:border-[#632EE3] ${
+                    isActive ? '!text-[#632EE3] !border-[#632EE3]' : ''
+                  }`
+                }
+              >
+                Installation
+              </NavLink>
             </li>
           </ul>
         </div>
