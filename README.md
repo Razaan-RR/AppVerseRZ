@@ -25,6 +25,16 @@ https://appverserz.netlify.app/
 
 ---
 
+## Tech Stack
+
+* **Node.js**
+* **React**
+* **Tailwind CSS**
+* **DaisyUI**
+* **React Router**
+
+---
+
 ## NPM Packages Used / Dependencies
 
 ### **Main Dependencies**
