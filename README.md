@@ -1,5 +1,7 @@
 # AppVerseRZ
 
+![App Screenshot](AppVerseRZ.png)
+
 ## Description
 
 AppVerseRZ is a modern web platform for exploring and downloading applications. Users can search for apps, view app details, and navigate through the marketplace seamlessly. The platform provides a clean, responsive interface and ensures a smooth user experience with live search and proper error handling.
@@ -7,7 +9,7 @@ AppVerseRZ is a modern web platform for exploring and downloading applications. 
 ---
 
 ## Live URL
-
+https://appverserz.netlify.app/
 
 ---
 
